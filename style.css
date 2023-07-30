@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  background: rgb(29, 238, 109);
+  padding: 1em;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.result {
+  min-height: 50px;
+  background: aliceblue;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.3em;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  font-size: 1.5rem;
+}
+
+.amount {
+  margin-bottom: 1.5em;
+}
+
+.amount label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+}
+
+.amount .amount-input {
+  width: 66%;
+  border: none;
+  border-bottom: 1px solid rgb(116, 115, 115);
+  background: transparent;
+  padding: 0.5em;
+  padding-bottom: 0;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.amount .amount-input::placeholder {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.currencies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.currencies .currency label {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 700;
+}
+
+.currencies #currency1,
+.currencies #currency2 {
+  padding: 0.2em;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.convert-image span {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.5em 0.7em;
+  color: white;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 360px) {
+  .currencies #currency1,
+  .currencies #currency2 {
+    width: 60px;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+  .container {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 1.95rem;
+  }
+
+  .amount .amount-input {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 40%;
+  }
+
+  .amount .amount-input {
+    width: 80%;
+  }
+}
